@@ -1,0 +1,127 @@
+.gt {
+   
+  position: absolute;
+  left: 10px;
+  filter: url(#sketch);
+  
+ 
+  opacity: 1;
+  animation-name: draw;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes draw {
+    to {
+       
+        opacity: 0;
+    }
+}
+
+.gt2 {
+   
+  position: absolute;
+  left: 10px;
+  filter: url(#sketch);
+  
+ 
+    opacity: 0;
+    animation-name: draw2;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+    
+  }
+  
+  @keyframes draw2 {
+      50% {
+         
+          opacity: 0.7;
+      }
+      100%{
+          opacity: 0;
+      }
+  }
+
+  .gt3 {
+   
+ 
+    position: absolute;
+    left: 10px;
+    filter: url(#sketch);
+    
+    opacity: 0;
+    animation-name: draw2;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 18s;
+    
+  }
+
+  .gt4 {
+   
+ 
+    position: absolute;
+    left: 10px;
+    filter: url(#sketch);
+    
+    opacity: 0;
+    animation-name: draw2;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 30s;
+    
+  }
+
+
+ .gta{
+  position: absolute;
+  filter: url(#sketch);
+opacity: 0;
+ 
+    animation-name: fadein;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 42s;
+ }
+
+ 
+
+.st4, .st1{
+    position: fixed;
+    filter: blur(0px);
+    
+
+    animation-name: t;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: 7;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes t {
+    to{
+        opacity: 0;
+        filter: blur(300px);
+    }
+}
+
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 0.5;
+  }
+}
